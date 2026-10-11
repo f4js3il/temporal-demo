@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: temporal-demo
+  temporal:
+    connection:
+      target: localhost:7233
+    namespace: default
+    workers-auto-discovery:
+      workflow-packages: com.test.temporaldemo
+      register-activity-beans: true
+server:
+  port: 12008
